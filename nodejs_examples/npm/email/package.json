@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "demo_email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo_email.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.14"
+  }
+}

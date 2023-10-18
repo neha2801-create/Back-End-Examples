@@ -1,0 +1,11 @@
+### Unsigned cookie
+GET http://localhost:8080/cookie HTTP/1.1
+
+### Signed cookie
+GET http://localhost:8080/signed_cookie HTTP/1.1
+
+### Check cookies
+GET http://localhost:8080/cookie_list HTTP/1.1
+
+### Delete cookies
+DELETE http://localhost:8080/delete_cookies HTTP/1.1
