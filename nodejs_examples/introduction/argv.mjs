@@ -14,7 +14,7 @@
  * add "type": "module" to package.json
  */
 import { argv } from 'process';
-import * as url from 'url'; 
+import * as url from 'url';
  
 for (let i = 0; i < argv.length; i++){
     console.log(argv[i]);

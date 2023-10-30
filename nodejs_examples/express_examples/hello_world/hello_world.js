@@ -10,7 +10,7 @@ app.set('port', process.env.PORT || 8080)
 // Middleware
 
 // Routes
-app.get('/', (req, res)=>{
+app.get('/hello', (req, res)=>{
   res.send('hello world')
 })
 

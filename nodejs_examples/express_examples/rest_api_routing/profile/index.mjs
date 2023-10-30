@@ -1,4 +1,4 @@
-// Refer to and modify from an example provided by Azat Mardan
+// Modified from an example provided by Azat Mardan
 
 // Imports
 import express from 'express' 
