@@ -14,9 +14,16 @@ console.log('__dirname: ', __dirname);
 app.use(express.static(path.join(__dirname, buildFolder)));
 
 // Serve index.html from React build folder
-app.get('/home', (req, res) => {
+app.get('*', (req, res) => {
     console.log("Home Page");
     res.sendFile(path.resolve(__dirname, buildFolder, 'index.html'));
+});
+
+app.post("/login", (req, res) => {
+    console.log("Login Page");
+    //Authenticate
+    //Show a new component view in React
+    //No need to redirect to a new page since it is a SPA
 });
 
 // Start server

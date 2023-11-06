@@ -41,7 +41,7 @@ app.post('/login', (req, res) => {
 
 //Created tokens should expire
 function generateAccessToken(user) {
-  return sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '90s' })
+  return sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '60s' })
 }
 
 app.listen(4000, () => {console.log("Server started on 4000")})
