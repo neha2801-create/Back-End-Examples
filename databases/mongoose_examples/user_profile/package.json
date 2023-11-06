@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "input_validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server_ur_validation.js",
+  "scripts": {
+    "start": "node user_profile.js",
+    "test": "mocha ./tests --recursive --timeout 15000 --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.17.1",
+    "mocha": "8.2.0",
+    "mongoose": "^5.10.13",
+    "supertest": "^6.0.0"
+  }
+}

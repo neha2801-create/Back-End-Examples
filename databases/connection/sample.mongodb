@@ -1,0 +1,4 @@
+use("course-db");
+db.getCollection("course-students").drop();
+use("test");
+db.getCollection("users").drop();
