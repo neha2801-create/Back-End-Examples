@@ -10,7 +10,7 @@ const postSchema = m.Schema({
     comments: [{ type: m.Schema.Types.ObjectId, ref: 'Comment' }]
 })
 
-const remoteurl = 'mongodb+srv://chester_the_tester:pfwcs@pfw-cs.ctovaum.mongodb.net/?retryWrites=true&w=majority';
+const remoteurl = 'mongodb+srv://chester_the_tester:cs590@pfw-cs.ctovaum.mongodb.net/?retryWrites=true&w=majority';
 m.connect(remoteurl, { useNewUrlParser: true, useUnifiedTopology: true })
 
 let Comment = m.model('Comment', commentSchema)
@@ -49,5 +49,12 @@ post.save(function (err) {
             console.log(`The post is ${post}`)
             m.disconnect()
         })
+
+    
 })
+
+Comment.deleteMany({}, function(err) { 
+    if (err) console.log(err);
+    console.log('collection removed') 
+ });
 

@@ -69,7 +69,7 @@ const findDocuments = (collection) => {
 };
 
 // Connection URI (This is a database on my MongoDB Atlas)
-const remoteurl = 'mongodb+srv://chester_the_tester:pfwcs@pfw-cs.ctovaum.mongodb.net/?retryWrites=true&w=majority';
+const remoteurl = 'mongodb+srv://chester_the_tester:cs590@pfw-cs.ctovaum.mongodb.net/?retryWrites=true&w=majority';
 // const localurl = 'mongodb://localhost:27017'
 
 // Use connect method to connect to the Server
