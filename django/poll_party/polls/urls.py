@@ -2,6 +2,9 @@ from django.urls import path
 
 from . import views
 
+# app_name is used to distinguish between different apps with the same name
+app_name = "polls"
+
 urlpatterns = [
     # ex: /polls/
     path("", views.index, name="index"),
