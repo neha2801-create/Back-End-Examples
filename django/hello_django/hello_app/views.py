@@ -3,9 +3,6 @@ from django.views.decorators.http import require_GET
 import json
 
 def home(request):
-    print(request.method)
-    print(request.content_type)
-    print(request.headers)
     return HttpResponse("Hello, Django!")
 
 # Show all header information
@@ -29,7 +26,10 @@ def data(request):
         data = "<br>".join([f"{header}: {value}" for header, value in request.GET.items()])
     elif request.method == "POST" and request.content_type == "application/json":
         data = json.loads(request.body)
-    return HttpResponse(f"""
-                            <h1>Request Data:</h1>
-                            <p>{data}</p>
-                        """)
+    return HttpResponse(
+        f"""
+            <h1>Request Data:</h1>
+            <p>{data}</p>
+        """)
+    
+    
