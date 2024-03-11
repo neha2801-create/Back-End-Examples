@@ -31,5 +31,4 @@ def data(request):
             <h1>Request Data:</h1>
             <p>{data}</p>
         """)
-    
-    
+

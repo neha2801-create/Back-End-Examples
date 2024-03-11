@@ -1,20 +1,20 @@
 @host=http://localhost:8000
 
 # Home page
-GET {{host}}/ HTTP/1.1
+GET {{host}}/hello/ HTTP/1.1
 
 ###
 # Get Headers
-GET {{host}}/headers HTTP/1.1
+GET {{host}}/hello/headers HTTP/1.1
 ###
-POST {{host}}/headers HTTP/1.1
+POST {{host}}/hello/headers HTTP/1.1
 Content-Type: application/json
 Cookie: csrftoken=sm70E4k6Gy2NMzkvzcCibaIkydDN3ggk
 X-CSRFToken: sm70E4k6Gy2NMzkvzcCibaIkydDN3ggk
 
 ###
 # POST data
-POST {{host}}/data HTTP/1.1
+POST {{host}}/hello/data HTTP/1.1
 Content-Type: application/json
 Content-Length: 18
 Cookie: csrftoken=sm70E4k6Gy2NMzkvzcCibaIkydDN3ggk
@@ -24,4 +24,4 @@ X-CSRFToken: sm70E4k6Gy2NMzkvzcCibaIkydDN3ggk
 
 ###
 # GET data
-GET {{host}}/data?message=hellodjangoGET&role=student HTTP/1.1
+GET {{host}}/hello/data?message=hellodjangoGET&role=student HTTP/1.1
